@@ -35,23 +35,27 @@ while (continueInput) {
 return employees;
 }
 
-const employees = collectEmployees();
 
-console.log(employees);
 
 // Display the average salary
 const displayAverageSalary = function(employeesArray) {
+  let total = 0;
+  const employeecount = employeesArray.length;
+  for (let index = 0; index < employeecount; index++) {
+    let realsalary = parseInt(employeesArray[index].salary);
+    total += realsalary;
+    console.log(realsalary);
+
+  }
     // TODO: Calculate and display the average salary
-  const validSalaries = employeesArray.filter(salary => !isNaN(salary));
   if (employeesArray.length === 0) {
     console.log('Empty salary array');
     return;
   }
-  const averageSalary = validSalaries.reduce((acc, salary) => acc + salary, 0) / employeesArray.length;
+  const averageSalary = total / employeecount;
   console.log('Average Salary:', averageSalary);
 }
 
-//WORK IN PROGRESS TO GET AVERAGE TO DISPLAY IN CONSOLE CORRECTLY
 
 // Select a random employee
 const getRandomEmployee = function(employeesArray) {
