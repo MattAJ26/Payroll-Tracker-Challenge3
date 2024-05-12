@@ -1,5 +1,15 @@
 # Payroll-Tracker-Challenge3
 
+## Code that I did
+
+I created an array to collect employee data from user input for the tracker
+I used a while loop to collect data
+I used isNaN for the salary input
+Users can type yes to continue adding employee data
+I created a function to calculate the average salary for the given employee data using a for loop
+I also created a function to select a random employee from the data input
+Each of these functions is console logged
+
 ## Your Task
 
 This week's Challenge requires you to modify starter code to create an application that enables a payroll manager to view and manage employee payroll data. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean and polished, responsive user interface that adapts to multiple screen sizes.
